@@ -4,6 +4,10 @@ A Claude Code plugin that adds a **self-improvement loop** to any project.
 
 It silently logs your Claude Code tool usage, then on demand, analyzes patterns — repeated failures, error spikes, stale TODOs — and creates a PR with the highest-impact fix.
 
+<p align="center">
+  <img src="demo/demo.svg" alt="claude-self-improve demo" width="700">
+</p>
+
 ## How it works
 
 ```
@@ -28,13 +32,6 @@ You work normally with Claude Code
 ## Install
 
 ```bash
-/plugin marketplace add yiidtw/claude-self-improve
-/plugin install claude-self-improve@yiidtw-claude-self-improve
-```
-
-Or clone directly:
-
-```bash
 git clone https://github.com/yiidtw/claude-self-improve.git
 claude --plugin-dir ./claude-self-improve
 ```
@@ -45,6 +42,7 @@ claude --plugin-dir ./claude-self-improve
 |---------|-------------|
 | `/self-improve:review` | Full analysis → proposals → implement best fix as PR |
 | `/self-improve:status` | Quick summary of logged tool usage and project health |
+| `/self-improve:backlog-sync` | Scan git history and check off completed BACKLOG.md items |
 
 ## What gets logged
 
