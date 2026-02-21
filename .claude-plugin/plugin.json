@@ -1,0 +1,11 @@
+{
+  "name": "claude-self-improve",
+  "description": "Nightly self-improvement loop for any project. Collects operational data, analyzes patterns, and creates PRs to fix issues.",
+  "version": "0.1.0",
+  "author": {
+    "name": "ydwu",
+    "url": "https://github.com/yiidtw"
+  },
+  "repository": "https://github.com/yiidtw/claude-self-improve",
+  "license": "MIT"
+}
